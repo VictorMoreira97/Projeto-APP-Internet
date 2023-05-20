@@ -105,9 +105,11 @@ input[type="submit"]:hover {
 }
 
 main {
+    background-color: #04c4d9;
     margin: 0% 7% 0% 7%;
 }
 
 #switchMain {
-    margin: auto;
+    width: auto;
+    margin-right: -10%;
 }
