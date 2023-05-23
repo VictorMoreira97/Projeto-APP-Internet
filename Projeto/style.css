@@ -33,7 +33,7 @@ nav {
 
 .headerButton {
     display: inline-block;
-    background-color: #fff;
+    background-color: #f1f1f1;
     padding: 1%;
     color: var(--cor1);
     font-family: var(--fonte-padrao);
@@ -71,7 +71,7 @@ input{
     padding: 1em;
     margin: 0px;
     height: 1em;
-    width: 30%;
+    width: 20%;
     border:1px solid #eaeaea;
     outline:none;
     font-size: 1em;
@@ -105,20 +105,32 @@ input[type="submit"]:hover {
     color: #222;
 }
 
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
 main {
-    background-color: #a1a1a14f;
+    background-color: #f1f1f1;
     margin: 0% 7% 0% 7%;
     text-align: center;
 }
 
-#mainPicture {
-    width: 10px;
+img {
+    border-radius: 0.25em;
+    box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.289);
+}
+
+#switchMain, #logo {
+    box-shadow: none;
 }
 
 .imgVitrine {
     display: inline-block;
-    height: 50px;
-    width: 30%;
+    width: 32%;
     text-align: center;
 }
 
@@ -128,19 +140,38 @@ main {
 
 .imagemVitrine {
     width: 100%;
-    margin: 0% 1% 0% 1%;
+    margin: 2% 1% 2% 1%;
 }
 
 #vitrine3 {
-    margin: 0% 7% 0% 7%;
+    margin: 0% 2% 0% 2%;
 }
 
-#vitribe3 > .imgVitrine {
+#vitrine3 > img {
     display: inline-block;
+    width: 30%;
+    margin: 0% 1% 0% 1%;
+}
+
+#vitrine4 {
+    display: block;
+    margin: 0% 0% 1% 8.4%;
+}
+
+#vitrine4imagens {
+    display: inline-block;
+    width: 69%;
+    margin: 0% 1% 0% -18%;
+}
+
+#vitrine4 > img {
     width: 33.33%;
-    margin: 0% 10px 0% 10px;
 }
 
-.vitrine4 {
+#vitrine4saibaMais {
     display: inline-block;
+    width: 20%;
+    height: 10%;
+    margin: 0% 1% 0% 1%;
+    text-align: start;
 }
