@@ -1,4 +1,4 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
@@ -28,13 +28,14 @@ header {
 
 nav {
     display: inline;
+    color: var(--cor1);
 }
 
-button {
+.redButton {
     display: inline-block;
     background-color: #f1f1f1;
-    padding: 1%;
-    color: var(--cor1);
+    padding: 0.5%;
+    color: var(--cor1); 
     font-family: var(--fonte-padrao);
     font-size: 1em;
     font-weight: bold;
@@ -42,12 +43,28 @@ button {
 
 }
 
-button:hover {
+.redButton:hover {
     background-color: var(--cor1);
     color: #fff;
 }
 
-/* https://stackoverflow.com/questions/39077407/search-bar-like-google-in-html-and-css */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.asideLink {
+    color: black;
+}
+
+.asideLink:hover {
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+
+.asideLink:visited {
+    text-decoration: none;
+}
 
 select {
     border: none;
@@ -64,7 +81,7 @@ select :hover {
 
 }
 
-input{
+input[type="seatch"]{
     border: none;
     border-radius: 0.5em;
     padding: 1em;
@@ -104,6 +121,10 @@ input[type="submit"]:hover {
     color: #222;
 }
 
+#inputTextCadastro {
+    width: 20em;
+}
+
 h1 {
     font-size: xx-large;
 }
@@ -122,6 +143,19 @@ main {
     box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.289);
 }
 
+#cadastro {
+    background-color: #757575;
+    color: #f1f1f1;
+    text-align: left;
+    width: 33%;
+    margin: 0% 33% 0% 33%;
+    padding: 2%;
+    border-radius: 0.25em;
+    box-shadow: 0.1em rgba(0, 0, 0, 0.289);
+        border-radius: 0.5em;
+    box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.289);
+}
+
 img {
     border-radius: 0.25em;
     box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.289);
@@ -135,36 +169,6 @@ img {
   max-width: 80%;
   min-width: 70%;
 }
-/*
-.container {
-  position: relative;
-  width: 100%;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: var(--cor5);
-}
-
-.container:hover .overlay {
-  opacity: 0.5;
-}
-
-.textOverlay {
-    color: #fff;
-
-    font-weight: bolder;
-    position: relative;
-}
-*/
 
 #switchMain, #logo {
     box-shadow: none;
@@ -188,12 +192,6 @@ img {
 #vitrine3 {
     margin: 0% 2% 0% 2%;
 }
-/*
-#vitrine3 > img {
-    display: inline-block;
-    max-width: 33%;
-    margin: 0% 1% 0% 1%;
-}*/
 
 #vitrine4 {
     display: block;
@@ -229,6 +227,15 @@ aside {
     box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.289);
 }
 
+#asideTitle {
+    text-align: center;
+    color: #fff;
+    background-color: #757575;
+    margin: 0% -5% 0% -5%;
+    border-radius: 0.5em;
+    box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.289);
+}
+
 section {
     display: table-cell;
     width: 20%;
@@ -242,19 +249,6 @@ section {
 li {
     list-style: none;
     color: black;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: #a1a1a1;
-}
-
-a:visited {
-    text-decoration: none;
 }
 
 footer {
