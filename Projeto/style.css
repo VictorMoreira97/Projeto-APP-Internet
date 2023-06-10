@@ -160,16 +160,29 @@ input[type="email"] {
 }
 
 #login {
-    width: 16%;
+    width: 40%;
+    min-width: 40%;
     background-color: #757575;
     color: #f1f1f1;
     text-align: left;
-    margin: 0% 33% 0% 42%;
-    padding: 1%;
+    margin-left: 29%;
+    padding: 1% 1% 1% 1%;
     border-radius: 0.25em;
     box-shadow: 0.1em rgba(0, 0, 0, 0.289);
     border-radius: 0.5em;
     box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.289);
+}
+
+#textLoginSenha {
+    min-width: 55%;
+    margin: 1%;
+    position: relative;
+
+}
+
+.textLoginSenha {
+    min-width: 98%;
+    margin: 0%;
 }
 
 #submitLogin {
