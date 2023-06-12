@@ -292,3 +292,26 @@ footer {
     color: #fff;
     padding: 2.5%;
 }
+
+#social {
+    background-color: #757575;
+    margin: 0px;
+    padding: 0px;
+}
+
+#perfil {
+    float: left;
+    align-items: left;
+    width: 4%;
+    border-radius: 10em;
+}
+
+.social {
+    display: inline-block;
+    width: 2.5%;
+}
+
+.social:hover {
+    border: 0.1rem solid;
+    border-color: #04d9d9;
+}
